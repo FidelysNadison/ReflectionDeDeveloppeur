@@ -57,4 +57,4 @@ function GenereClasses($db, $host, $user, $pwd)
     }
     $conn = null;
 }
-GenereClasses('testgenereclasse', 'localhost', 'root', '');
+//Test -> GenereClasses('testgenereclasse', 'localhost', 'root', '');
