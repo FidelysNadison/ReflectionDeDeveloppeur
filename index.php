@@ -4,10 +4,11 @@ function GenereClasses($db, $host, $user, $pwd)
 {
     $dsn = 'mysql:dbname=' . $db . ';host=' . $host; 
 
-
+// connection BDD
     try {
-        $conn = new PDO($dsn, $user, $pwd);  // conection au BDD 
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // Sécurité
+
+        $conn = new PDO('mysql:host=' . $host . ';dbname=' . $db . ';charset=utf8', $user, $pwd);
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
         echo 'Erreur de connexion : ' . $e->getMessage();
         return;
@@ -56,3 +57,4 @@ function GenereClasses($db, $host, $user, $pwd)
     }
     $conn = null;
 }
+GenereClasses('testgenereclasse', 'localhost', 'root', '');
