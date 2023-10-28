@@ -6,10 +6,10 @@ Puis au cours du développement les développeurs sont amenés à modifier la st
 Il est très pratique au cours du développement d'un projet d'avoir accès à des classes permettant de piloter les tables de la base de données.
 ## Concevez un système que nous appellerons GenereClasses.
 ### Ce système prendra en paramètre 4 variables :
-    •Nom de la base de données
-    •Serveur de la base de données
-    •Utilisateur
-    •Mot de passe
+    1-Nom de la base de données
+    2-Serveur de la base de données
+    3-Utilisateur
+    4-Mot de passe
 ### Ce système a pour but de générer des classes    
     Ce seront des classes (php) qui peuvent effectuer un ensemble d'actions sur les tables.
     Les champs de la table seront les attributs de la classe.
